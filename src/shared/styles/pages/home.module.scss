@@ -1,0 +1,121 @@
+.content {
+  padding: 20px 30px;
+}
+
+.heading {
+  font-size: 28px;
+  line-height: 30px;
+  margin: 0 0 20px;
+  font-weight: 500;
+
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
+
+.preview {
+  align-self: center;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page {
+  line-height: 40px;
+  font-weight: 700;
+  padding: 0 16px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fbfbfb;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+
+  &.active {
+    background-color: #3bd0ad;
+    color: #fff;
+  }
+}
+
+.button {
+  font-size: 14px;
+  width: 100%;
+  border-radius: 555px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  text-decoration: none;
+  outline: 0;
+  padding: 10px 22px 9px;
+  margin-top: 15px;
+  line-height: 150%;
+  font-weight: 700;
+
+  &:hover {
+    background: #dcdcdc;
+  }
+
+  @media (min-width: 768px) {
+    width: fit-content;
+  }
+}

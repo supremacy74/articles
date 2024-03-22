@@ -1,0 +1,23 @@
+.breadcrumbs {
+  background: #fff;
+  padding: 20px 0;
+
+  @media (min-width: 768px) {
+    background: #f6f6f6;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & span, a {
+    color: #999;
+    font-size: 14px;
+  }
+}
+
+.accent {
+  color: #004b80 !important;
+}
